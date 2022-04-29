@@ -1,4 +1,4 @@
-/* Requiring the nedded libarys*/
+/* Requiring the needed libraries */
 const { Collection, Client } = require("discord.js");
 
 require("dotenv").config();
@@ -22,13 +22,11 @@ const client = new Client({
     "DIRECT_MESSAGE_TYPING",
   ],
 });
-module.exports = client;
 
-/* Basically loading the even and command loader ironic right */
+/* Basically loading the event and command loader ironic right */
 require("./util/eventLoader")(client);
 
 /* It's creating a new collection for the commands. */
-
 client.commands = new Collection();
 
 /* Logging the bot in. */
