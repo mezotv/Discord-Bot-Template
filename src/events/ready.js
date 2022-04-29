@@ -25,7 +25,7 @@ module.exports = async (client) => {
 
   (async () => {
     try {
-      if (process.env.STATUS === "PRODUCTION") {
+      if (process.env.STATUS === "PRODUCTION") { // If the bot is in production mode it will load slash commands for all guilds
         await rest.put(Routes.applicationCommands(CLIENT_ID), {
           body: commands,
         });
