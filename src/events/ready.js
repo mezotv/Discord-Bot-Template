@@ -45,4 +45,8 @@ module.exports = async (client) => {
       if (err) console.error(err);
     }
   })();
+  client.user.setPresence({
+    activities: [{ name: `${process.env.STATUSBOT}` }],
+    status: "dnd",
+  });
 };

@@ -27,7 +27,6 @@ module.exports = client;
 /* Basically loading the even and command loader ironic right */
 require("./util/eventLoader")(client);
 
-
 /* It's creating a new collection for the commands. */
 
 client.commands = new Collection();
