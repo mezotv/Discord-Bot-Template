@@ -1,0 +1,37 @@
+{
+  "name": "discord-boilerplate-bot",
+  "version": "1.0.0",
+  "description": "Discord.js v13 boilerplate code. Ready for slash commands. Includes event and command handlers with good file structure!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nodemon .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mezotv/discord-boilerplate-bot.git"
+  },
+  "keywords": [
+    "Discordjs",
+    "discord-bot",
+    "discord-js",
+    "discord",
+    "javascript"
+  ],
+  "author": "Mezo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mezotv/discord-boilerplate-bot/issues"
+  },
+  "homepage": "https://github.com/mezotv/discord-boilerplate-bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/rest": "^0.4.1",
+    "discord-api-types": "^0.32.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
