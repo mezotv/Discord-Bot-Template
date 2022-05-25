@@ -23,7 +23,7 @@ const client = new Client({
   ],
 });
 
-/* Basically loading the event and command loader ironic right */
+/* Basically loading the event loader ironic right */
 require("./util/eventLoader")(client);
 
 /* It's creating a new collection for the commands. */
