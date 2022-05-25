@@ -16,8 +16,8 @@ To use this bot follow the steps given down below.
     3. Open the Files in vscode and create a .env file based on the template given below
 
 ```bash
-TOKEN=<Your bots token ofc>
-GUILD_ID=<The guild id to load slash commands on>
+TOKEN= <Your bots token ofc>
+GUILD_ID= <The guild id to load slash commands on>
 STATUS=DEVELOPMENT <Change to PRODUCTION to load commands on every guild>
 STATUSBOT= <The status for your bot>
 ```
