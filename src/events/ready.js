@@ -20,7 +20,7 @@ module.exports = async (client) => {
   const CLIENT_ID = client.user.id;
 
   const rest = new REST({
-    version: "9",
+    version: "10",
   }).setToken(process.env.TOKEN);
 
   (async () => {
