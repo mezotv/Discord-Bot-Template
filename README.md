@@ -38,6 +38,7 @@ npm run start
 - Slash command ready
 - Clean file structure
 - Fullscreen mode
+
+## Message from the creator
 If you use this template in your bot make sure to add me on Discord [Mezo#0001](https://discord.com/users/347077478726238228)
 I would love to check them out!
-
