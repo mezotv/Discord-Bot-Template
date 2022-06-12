@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mezotv/discord-boilerplate-bot.git"
+    "url": "git+https://github.com/Developer-Dungeon-Studio/Discord-Boilerplate-Template.git"
   },
   "keywords": [
     "Discordjs",
@@ -18,12 +18,12 @@
     "discord",
     "javascript"
   ],
-  "author": "Mezo",
+  "author": "Developers Dungeon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mezotv/discord-boilerplate-bot/issues"
+    "url": "https://github.com/Developer-Dungeon-Studio/Discord-Boilerplate-Template/issues"
   },
-  "homepage": "https://github.com/mezotv/discord-boilerplate-bot#readme",
+  "homepage": "https://github.com/Developer-Dungeon-Studio/Discord-Boilerplate-Template/#readme",
   "dependencies": {
     "@discordjs/builders": "^0.13.0",
     "@discordjs/rest": "^0.4.1",
