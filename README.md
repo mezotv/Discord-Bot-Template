@@ -2,6 +2,8 @@
 # Discord Bot Template
 
 This template provides boilerplate code for Discord.js v13. Ready for slash command and everything you need to start out with your bot!
+When using this template please give credits to Developers Dungeon Studios!
+
 ## Deployment
 
 To use this bot follow the steps given down below.
