@@ -1,5 +1,4 @@
 module.exports = (interaction) => {
-
   const client = interaction.client;
   if (!interaction.isCommand()) return;
   const command = client.commands.get(interaction.commandName);
