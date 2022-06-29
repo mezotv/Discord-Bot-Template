@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Developer-Dungeon-Studio/Discord-Boilerplate-Template/#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.13.0",
+    "@discordjs/builders": "^0.15.0",
     "@discordjs/rest": "^0.4.1",
     "chalk-advanced": "^1.0.3",
     "discord-api-types": "^0.32.0",
