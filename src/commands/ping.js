@@ -1,13 +1,12 @@
-const { SlashCommandBuilder } = require("@discordjs/builders");
-const { MessageEmbed } = require("discord.js");
+const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("ping")
-    .setDescription("Returns the bot's ping status"),
+    .setDescription("Displays the clients ping"),
 
   async execute(interaction, client) {
-    const pingembed = new MessageEmbed()
+    const pingembed = new EmbedBuilder()
 
       .setColor("#5865f4")
       .setTitle(":ping_pong:  Pong!")
@@ -20,8 +19,21 @@ module.exports = {
       )
       .setTimestamp();
 
+      const button = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setLabel('Discord Ping')
+          .setStyle(5)
+          .setEmoji('💻')
+          .setURL('https://discordstatus.com/'),
+      );
+
     await interaction.reply({
-      embeds: [pingembed]
+      embeds: [pingembed],
+      components: [button],
     });
+    setTimeout(() => {
+      button.components[0].setDisabled(true);
+      interaction.editReply({ embeds: [pingembed], components: [button] });
+    }, 120000);
   },
 };

@@ -1,7 +1,7 @@
 
 # Discord Bot Template
 
-This template provides boilerplate code for Discord.js v13. Ready for slash command and everything you need to start out with your bot!
+This template provides boilerplate code for Discord.js v14. Ready for slash command and everything you need to start out with your bot!
 When using this template please give credits to Developers Dungeon Studios!
 
 ## Deployment
@@ -37,6 +37,7 @@ npm run start
 
 ## Features
 
+- Works with discord.js v14
 - Slash command ready
 - Clean file structure
 - Fast and secure

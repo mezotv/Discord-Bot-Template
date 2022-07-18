@@ -1,4 +1,4 @@
-import { Client, Intents } from 'discord.js';
+const { Client, GatewayIntentBits } = require('discord.js');
 
 /* Misc */
 console.clear();
@@ -6,11 +6,10 @@ console.clear();
 /* Initialize client */
 const client = new Client({
     intents: [
-      Intents.FLAGS.GUILDS,
-      Intents.FLAGS.GUILD_MESSAGES,
-      Intents.FLAGS.DIRECT_MESSAGES
+      GatewayIntentBits.Guilds,
     ],
 });
+
 
 const boilerplateComponents = async () => {
   await require('./util/boilerplateClient')(client);
