@@ -4,7 +4,8 @@
   "description": "Discord.js v14 boilerplate code. Ready for slash commands. Includes event and command handlers with good file structure!",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "test": "nodemon ."
   },
   "repository": {
     "type": "git",
