@@ -22,6 +22,7 @@ TOKEN= <Your bots token ofc>
 GUILD_ID= <The guild id to load slash commands on>
 STATUS=DEVELOPMENT <Change to PRODUCTION to load commands on every guild>
 STATUSBOT= <The status for your bot>
+DISCORDSTATUS=dnd <Change to whatever you want>
 ```
     4. One you filled out the .env variables open a terminal and run the following commands
 
@@ -38,6 +39,7 @@ npm run start
 ## Features
 
 - Works with discord.js v14
+- Template commands
 - Slash command ready
 - Clean file structure
 - Fast and secure

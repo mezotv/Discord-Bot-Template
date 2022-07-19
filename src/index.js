@@ -10,7 +10,6 @@ const client = new Client({
     ],
 });
 
-
 const boilerplateComponents = async () => {
   await require('./util/boilerplateClient')(client);
 }

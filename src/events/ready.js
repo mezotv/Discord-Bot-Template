@@ -17,8 +17,6 @@ module.exports = async (client) => {
     client.commands.set(command.data.name, command);
   }
 
-  const CLIENT_ID = client.user.id;
-
   const rest = new REST({
     version: "10",
   }).setToken(process.env.TOKEN);
@@ -26,14 +24,14 @@ module.exports = async (client) => {
   (async () => {
     try {
       if (process.env.STATUS === "PRODUCTION") { // If the bot is in production mode it will load slash commands for all guilds
-        await rest.put(Routes.applicationCommands(CLIENT_ID), {
+        await rest.put(Routes.applicationCommands(client.user.id), {
           body: commands,
         });
         console.log(`${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(">")} ${ChalkAdvanced.green("Successfully registered commands globally")}`);
 
       } else {
         await rest.put(
-          Routes.applicationGuildCommands(CLIENT_ID, process.env.GUILD_ID),
+          Routes.applicationGuildCommands(client.user.id, process.env.GUILD_ID),
           {
             body: commands,
           }
@@ -47,6 +45,6 @@ module.exports = async (client) => {
   })();
   client.user.setPresence({
     activities: [{ name: `${process.env.STATUSBOT}` }],
-    status: "dnd",
+    status: `${process.env.DISCORDSTATUS}`,
   });
 };
