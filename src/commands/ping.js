@@ -31,9 +31,5 @@ module.exports = {
       embeds: [pingembed],
       components: [button],
     });
-    setTimeout(() => {
-      button.components[0].setDisabled(true);
-      interaction.editReply({ embeds: [pingembed], components: [button] });
-    }, 120000);
   },
 };
