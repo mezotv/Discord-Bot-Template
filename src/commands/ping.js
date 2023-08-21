@@ -1,4 +1,9 @@
-const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, SlashCommandBuilder } = require('discord.js');
+const {
+  EmbedBuilder,
+  ActionRowBuilder,
+  ButtonBuilder,
+  SlashCommandBuilder,
+} = require("discord.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -10,22 +15,20 @@ module.exports = {
 
       .setColor("#5865f4")
       .setTitle(":ping_pong:  Pong!")
-      .addFields(
-        {
-          name: "**Api** latency",
-          value: `> **${Math.round(client.ws.ping)}**ms`,
-          inline: false,
-        }
-      )
+      .addFields({
+        name: "**Api** latency",
+        value: `> **${Math.round(client.ws.ping)}**ms`,
+        inline: false,
+      })
       .setTimestamp();
 
-      const button = new ActionRowBuilder().addComponents(
-        new ButtonBuilder()
-          .setLabel('Discord Ping')
-          .setStyle(5)
-          .setEmoji('💻')
-          .setURL('https://discordstatus.com/'),
-      );
+    const button = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setLabel("Discord Ping")
+        .setStyle(5)
+        .setEmoji("💻")
+        .setURL("https://discordstatus.com/"),
+    );
 
     await interaction.reply({
       embeds: [pingembed],
