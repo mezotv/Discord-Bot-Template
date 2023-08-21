@@ -1,14 +1,16 @@
 {
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "format": "prettier --write  \"src/**/*.js\""
   },
   "dependencies": {
     "@discordjs/rest": "^1.7.0",
     "chalk-advanced": "^1.0.6",
     "discord-api-types": "^0.37.38",
     "discord.js": "^14.9.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "prettier": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "2.0.20"
