@@ -6,7 +6,7 @@ const { ChalkAdvanced } = require("chalk-advanced");
 
 module.exports = async (client) => {
   const commandFiles = readdirSync("./src/commands/").filter((file) =>
-    file.endsWith(".js")
+    file.endsWith(".js"),
   );
 
   const commands = [];
@@ -27,17 +27,28 @@ module.exports = async (client) => {
         await rest.put(Routes.applicationCommands(client.user.id), {
           body: commands,
         });
-        console.log(`${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(">")} ${ChalkAdvanced.green("Successfully registered commands globally")}`);
-
+        console.log(
+          `${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(
+            ">",
+          )} ${ChalkAdvanced.green(
+            "Successfully registered commands globally",
+          )}`,
+        );
       } else {
         await rest.put(
           Routes.applicationGuildCommands(client.user.id, process.env.GUILD_ID),
           {
             body: commands,
-          }
+          },
         );
 
-        console.log(`${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(">")} ${ChalkAdvanced.green("Successfully registered commands locally")}`);
+        console.log(
+          `${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(
+            ">",
+          )} ${ChalkAdvanced.green(
+            "Successfully registered commands locally",
+          )}`,
+        );
       }
     } catch (err) {
       if (err) console.error(err);
