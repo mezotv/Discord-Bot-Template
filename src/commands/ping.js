@@ -14,7 +14,7 @@ module.exports = {
     const pingembed = new EmbedBuilder()
 
       .setColor("#5865f4")
-      .setTitle(":ping_pong:  Pong!")
+      .setTitle("🏓  Pong!")
       .addFields({
         name: "**Api** latency",
         value: `> **${Math.round(client.ws.ping)}**ms`,
@@ -28,6 +28,11 @@ module.exports = {
         .setStyle(5)
         .setEmoji("💻")
         .setURL("https://discordstatus.com/"),
+        new ButtonBuilder()
+        .setLabel("Test")
+        .setCustomId("test")
+        .setStyle(1)
+        .setEmoji("⚠️")
     );
 
     await interaction.reply({
