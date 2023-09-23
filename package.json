@@ -1,4 +1,8 @@
 {
+  "name": "discord-boilerplate-template",
+  "version": "1.1.0",
+  "description": "This template provides boilerplate code for Discord.js v14. Ready for slash command and everything you need to start out with your bot!",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
@@ -14,5 +18,20 @@
   },
   "devDependencies": {
     "nodemon": "2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mezotv/Discord-Bot-Template.git"
+  },
+  "keywords": [
+    "discordjs",
+    "discord-bot",
+    "discordjs-v14"
+  ],
+  "author": "mezotv (Dominik)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mezotv/Discord-Bot-Template/issues"
+  },
+  "homepage": "https://github.com/mezotv/Discord-Bot-Template#readme"
 }
