@@ -10,7 +10,7 @@ module.exports = class EventHandler {
     readdir("./src/events/", (err, files) => {
       if (err) return console.error(err);
 
-      for (const file of files) {
+      for (let file of files) {
         console.log(
           `${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(
             ">"

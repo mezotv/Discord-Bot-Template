@@ -30,7 +30,7 @@ module.exports = {
         .setURL("https://discordstatus.com/"),
         new ButtonBuilder()
         .setLabel("Test")
-        .setCustomId("test")
+        .setCustomId("ping") // this needs to match the data inside the button file
         .setStyle(1)
         .setEmoji("⚠️")
     );

@@ -9,6 +9,7 @@ const {
 require("dotenv").config();
 
 const EventHandler = require("./eventLoader");
+const ButtonHandler = require("./buttonHandler");
 
 module.exports = class BoilerplateClient extends Client {
   constructor(customCacheOptions = {}) {
@@ -34,9 +35,14 @@ module.exports = class BoilerplateClient extends Client {
     });
 
     this.commands = new Collection();
-
+    
+    // Event Loader
     this.eventHandler = new EventHandler(this);
     this.eventHandler.load();
+
+    // Button Loader
+    this.buttonHandler = new ButtonHandler(this);
+    this.buttonHandler.load();
   }
 
   loginBot() {

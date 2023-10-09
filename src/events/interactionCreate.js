@@ -23,7 +23,7 @@ module.exports = (client, interaction) => {
         ephemeral: true,
       });
     }
-  } else {
+  } else if (interaction.isSelectMenu()) {
     const button = client.buttons.get(interaction.customId);
     if (button) return button.execute(interaction, client);
   }
