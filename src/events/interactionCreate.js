@@ -3,7 +3,7 @@ module.exports = (client, interaction) => {
     const command = client.commands.get(interaction.commandName);
     if (!command) return;
     try {
-      command.execute(interaction, client, userDb);
+      command.execute(interaction, client);
     } catch (err) {
       if (err) console.error(err);
       interaction.reply({
@@ -15,7 +15,7 @@ module.exports = (client, interaction) => {
 
     const button = client.buttons.get(interaction.customId);
     try {
-      button.execute(interaction, client, userDb);
+      button.execute(interaction, client);
     } catch (err) {
       if (err) console.error(err);
       interaction.reply({
@@ -25,6 +25,6 @@ module.exports = (client, interaction) => {
     }
   } else {
     const button = client.buttons.get(interaction.customId);
-    if (button) return button.execute(interaction, client, userDb);
+    if (button) return button.execute(interaction, client);
   }
 };
