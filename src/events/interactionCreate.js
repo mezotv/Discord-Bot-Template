@@ -1,4 +1,4 @@
-module.exports = (client, interaction) => {
+module.exports = async (client, interaction) => {
   if (interaction.isChatInputCommand()) {
     const command = client.commands.get(interaction.commandName);
     if (!command) return;
@@ -11,6 +11,19 @@ module.exports = (client, interaction) => {
         ephemeral: true,
       });
     }
+  } else if (interaction.isAutocomplete()) {
+		const command = interaction.client.commands.get(interaction.commandName);
+
+		if (!command) {
+			console.error(`No command matching ${interaction.commandName} was found.`);
+			return;
+		}
+
+		try {
+			await command.autocomplete(interaction);
+		} catch (error) {
+			console.error(error);
+		}
   } else if (interaction.isButton()) {
 
     const button = client.buttons.get(interaction.customId);
