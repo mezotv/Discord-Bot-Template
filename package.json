@@ -1,6 +1,6 @@
 {
   "name": "discord-boilerplate-template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This template provides boilerplate code for Discord.js v14. Ready for slash command and everything you need to start out with your bot!",
   "main": "index.js",
   "scripts": {
