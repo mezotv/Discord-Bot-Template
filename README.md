@@ -44,5 +44,5 @@ npm run start
 - Fast and secure
 
 ## Message from the creator
-If you use this template in your bot make sure to add me on Discord [Dominik#5555](https://discord.com/users/347077478726238228)
+If you use this template in your bot make sure to add me on Discord [dominikdev](https://discord.com/users/347077478726238228)
 I would love to check them out!
