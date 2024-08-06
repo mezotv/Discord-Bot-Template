@@ -20,7 +20,7 @@ module.exports = class ButtonHandler {
       this.client.buttons.set(button.data.name, button);
     }
     console.log(
-      `${ChalkAdvanced.white("AdoptMe Bot")} ${ChalkAdvanced.gray(
+      `${ChalkAdvanced.white("Boilerplate Bot")} ${ChalkAdvanced.gray(
         ">",
       )} ${ChalkAdvanced.green("Successfully loaded buttons")}`,
     );
