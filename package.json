@@ -1,37 +1,25 @@
 {
   "name": "discord-boilerplate-template",
-  "version": "1.1.1",
-  "description": "This template provides boilerplate code for Discord.js v14. Ready for slash command and everything you need to start out with your bot!",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "This template provides boilerplate code for Discord.js v14. Ready for slash command and everything you need to start out with your bot! ",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "format": "prettier --write  \"src/**/*.js\""
-  },
-  "dependencies": {
-    "@discordjs/rest": "^1.7.0",
-    "chalk-advanced": "^1.0.6",
-    "discord-api-types": "^0.37.38",
-    "discord.js": "^14.9.0",
-    "dotenv": "^16.0.3",
-    "prettier": "^3.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "2.0.20"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mezotv/Discord-Bot-Template.git"
   },
-  "keywords": [
-    "discordjs",
-    "discord-bot",
-    "discordjs-v14"
-  ],
-  "author": "mezotv (Dominik)",
+  "author": "Dominik Koch",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mezotv/Discord-Bot-Template/issues"
   },
-  "homepage": "https://github.com/mezotv/Discord-Bot-Template#readme"
+  "homepage": "https://github.com/mezotv/Discord-Bot-Template#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
 }
